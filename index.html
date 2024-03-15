@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Events</title>
+</head>
+
+<body>
+  <h1 onclick="console.log('I am clicked!');">JavaScript Document Object Model Events</h1>
+  <button onclick="console.log(7);">Click Me!!</button>
+  <button onclick="console.log(5);">Another Button</button>
+  <br>
+  <br>
+  <!-- Option 01 -->
+  <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+
+  <!-- Option 02 -->
+  <button onclick="makeRed()">Make Red</button>
+
+  <!-- Option 3.1 -->
+  <button id="make-blue">Make Blue</button>
+
+  <!-- Option 3.2 -->
+  <button id="make-purple">Make Purple</button>
+
+  <!-- Option 4.1 -->
+  <button id="make-pink">Make Pink</button>
+
+  <!-- Option 4.2 -->
+  <button id="make-green">Make Green</button>
+
+  <!-- Option 4.3 (final) -->
+  <button id="make-goldenrod">Make Goldenrod</button>
+
+  <script src="event.js"></script>
+</body>
+
+</html>
