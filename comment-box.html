@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commnet Box</title>
+</head>
+
+<body>
+  <h1>Please add your comment</h1>
+  <div id="comment-container">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi esse molestiae laborum pariatur facere id
+      minima temporibus fuga adipisci quia alias est perspiciatis at, hic laboriosam quo possimus vel odio, asperiores
+      ab sunt. Atque perferendis, non cumque veritatis corporis, repellendus voluptatem sit pariatur nihil sint beatae
+      nemo in minus earum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta cumque minus, dolor inventore
+      recusandae quae nemo ad nobis beatae impedit porro unde, voluptatem quasi est quaerat autem accusamus reiciendis
+      magni tempore quisquam rem. Dolor ut sed excepturi id dignissimos aliquam, corrupti dolores voluptatibus quasi
+      ipsum dolorem aspernatur voluptate totam doloremque error, esse omnis dolorum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil suscipit inventore et. Aliquam corrupti ipsa
+      facere eos impedit ipsam possimus, exercitationem voluptates modi sint cupiditate dolorum nihil vero,
+      reprehenderit, sit eius unde velit rem consequuntur praesentium asperiores omnis. Alias fugit facilis aliquid iure
+      deserunt.</p>
+  </div>
+
+  <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+  <br><br>
+  <button id="btn-post" type="submit">Post</button>
+
+  <script>
+    document.getElementById('btn-post').addEventListener('click', function () {
+      const commentBox = document.getElementById('new-comment');
+      const newComment = commentBox.value;
+      const commentContainer = document.getElementById('comment-container');
+      const p = document.createElement('p');
+      p.innerText = newComment;
+      commentContainer.appendChild(p);
+      commentBox.value = '';
+    });
+  </script>
+</body>
+
+</html>
